@@ -16,7 +16,7 @@ mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 mkdir -p ffmpeg
 cd ffmpeg
-curl -L --silent $DOWNLOAD_URL | tar -xvf {file.zip} -C /dest/directory/
+curl -L --silent $DOWNLOAD_URL | unzip ffmpeg-20200824-3477feb-win64-static.zip
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/ffmpeg.sh"
